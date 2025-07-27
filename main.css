@@ -1,0 +1,187 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light background color */
+  background-image: url('Wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border: 5px solid #444; /* Full-page border */
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(52, 58, 64, 0.85);
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin-left: 1rem;
+}
+
+nav {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Changed hover color to light green */
+nav a:hover {
+  background-color: #28a745; /* Light green on hover */
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem; /* Increased padding */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 3px solid #333; /* Added border */
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid #666;
+  background-color: #fff;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Light green hover */
+.welcome-text:hover {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #1e7e34;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Light green hover */
+.feature:hover {
+  background-color: #d4edda; /* Light green background */
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+}
+
+.feature.highlight {
+  background-color: #d4edda ;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.7) ;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+/* Extra text shown on feature click */
+.feature-extra-text {
+  margin-top: 1rem;
+  background-color: #e6f4ea; /* Light greenish */
+  padding: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.4);
+  color: #155724;
+}
+
+/* Pricing */
+.pricing-plans {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Light green hover */
+.plan:hover {
+  transform: translateY(-5px);
+  border-color: #28a745;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin: 1rem 0;
+}
+
+/* FAQ and About Sections with border */
+#faqs-section,
+#about-section {
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #ffffff;
+  margin-top: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+/* Highlighted class for sections */
+.highlight {
+  background-color: #d4edda ;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.7) ;
+  transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+}
+
+.highlight h2 {
+  color: #155724 ;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(52, 58, 64, 0.85);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
